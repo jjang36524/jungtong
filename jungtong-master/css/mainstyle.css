@@ -1,0 +1,134 @@
+@charset utf-8;
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333333;
+}
+body{
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.top{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.logo{
+    float: left;
+    height: 100px;
+    width: 20%;
+}
+.menu{
+    float: right;
+    height: 100px;
+    width:80%;
+    right: 0;
+    top: 30px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.navi>li{
+    float: left;
+    height: 40px;
+    width: 10%;
+    background: #0f0f70;
+}
+.navi>li>a{
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-decoration-line: none;
+}
+.navi>li:hover{
+   background-color:#004191;
+}
+.submenu>li{
+    height: 35px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.submenu>li>a{
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line: none;
+}
+.submenu{
+    display: none;
+}
+.leftinfo>a{
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    margin-left: -40%;
+}
+.leftinfo{
+    height: 400px;
+    width:25%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.lefttext{
+    display: block;
+    height: 100px;
+    width: 50%;
+    position: absolute;
+    margin: -30px 0 0 -15%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: #C0A977;
+    left: 50%;
+    top:50%;
+}
+.central{
+    width:75%;
+}
+.howto{
+    width:95%;
+    display: block;
+    height: 100px;
+    background: #DCDAB2;
+    border: solid #888B88 1px;
+}
+.btlogo{
+    float: left;
+    height: 100px;
+    width: 25%;
+}
+.copy{
+    float:left;
+    height:100px;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100px;
+}
+.sns{
+    float:right;
+    height: 100px;
+    width:25%;
+}
+footer{
+    background-color: #B5B5B6;
+    height: 100px;
+    width: 100%;
+}

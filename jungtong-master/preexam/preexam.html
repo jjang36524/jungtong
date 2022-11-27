@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <link href="preexamstyle.css" type="text/css" rel="stylesheet">
+        <script src="../script/jquery-1.12.3.js"></script>
+        <script src="../script/script.js" defer type="text/javascript"></script>
+        <header id="hd">
+        </header>
+        <div class="bodywrap">
+            <div class="leftinfo">
+                <a href="#">
+                    <span class="lefttext">공지사항</span>
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="#">
+                    <span class="lefttext">일정표</span>
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="#">
+                    <span class="lefttext">모의고사 분석</span>
+                </a>
+            </div>
+            <button id="6b"><h1>6모</h1></button>
+            <button id="9b"><h1>9모</h1></button>
+            <script>
+                let b6=document.getElementById("6b");
+                let b9=document.getElementById("9b");
+
+                b6.onclick=function(){
+                     let d6=document.getElementById("6mo");
+                    let d9=document.getElementById("9mo");
+                    d9.classList.remove("active");
+                    d6.classList.add("active");
+                }
+                b9.onclick=function(){
+                    let d6=document.getElementById("6mo");
+                    let d9=document.getElementById("9mo");
+                    d6.classList.remove("active");
+                    d9.classList.add("active");
+                }
+            </script>
+            <br>
+            <div class="central active" id="6mo">
+                <ul class="tabmenu">
+                    <li class="box">
+                        <a href="#">국어</a>
+                        <div><a href='../6mokpro.pdf' download>문제</a></div>
+                        <div><a href='../6mokans.pdf' download>정답</a></div>
+                    </li>
+                    <li class="box">
+                        <a href="#">수학</a>
+                        <div>설명</div>
+                    </li>
+
+                    <li class="box">
+                        <a href="#">영어</a>
+                        <div>설명</div>
+                    </li>
+                    <li class="box">
+                        <a href="#">한국사</a>
+                        <div>설명</div>
+                    </li>
+                    <li class="box">
+                        <a href="#">사회탐구</a>
+                       <div>설명</div>
+                    </li>
+                    <li class="box">
+                        <a href="#">과학탐구</a>
+                        <div>설명</div>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="central" id="9mo">
+                <ul class="tabmenu">
+                    <li class="box">
+                        <a href="">국어</a>
+                        <div><a href='../9mokpro.pdf' download>문제</a></div>
+                        <div><a href='../9mokans.pdf' download>정답</a></div>
+                    </li>
+                    <li class="box">
+                        <a href="#">수학</a>
+                        <div>설명</div>
+                    </li>
+
+                    <li class="box">
+                        <a href="#">영어</a>
+                        <div>설명</div>
+                    </li>
+                    <li class="box">
+                        <a href="#">한국사</a>
+                        <div>설명</div>
+                    </li>
+                    <li class="box">
+                        <a href="#">사회탐구</a>
+                       <div>설명</div>
+                    </li>
+                    <li class="box">
+                        <a href="#">과학탐구</a>
+                        <div>설명</div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <footer>
+            <div class="btlogo">
+                <img src="image/Logomono.jpg">
+            </div>
+            <div class="copy">
+                copyright
+            </div>
+            <div class="sns">
+                sns
+            </div>
+        </footer>
+    </body>
+</html>
